@@ -1,0 +1,19 @@
+/* aside公告栏按钮美化 */
+.social-button .button--animated {
+  background: #3eb8be;
+  color: rgb(255, 255, 255);
+  display: block;
+  margin: 4px 0;
+  text-align: center;
+  line-height: 2.4;
+  transition: 0.3s;
+  border-radius: 8px;
+}
+
+.social-button .button--animated:hover {
+  background-color: #40c4ae;
+}
+
+.social-button .button--animated:active {
+  background-color: #339ea3;
+}
