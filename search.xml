@@ -123,6 +123,17 @@
     
     <entry>
       <title></title>
+      <link href="/css/menu.css"/>
+      <url>/css/menu.css</url>
+      
+        <content type="html"><![CDATA[#nav .menus_items {    position: absolute;    width: fit-content;    left: 50%;    transform: translateX(-50%);}#nav .menus_items .menus_item:hover .menus_item_child{  display: flex;}/* 这里的5是代表导航栏的第五个元素，即有子菜单的元素，可以按自己需求修改 */.menus_items .menus_item:nth-child(5) .menus_item_child {    left: -65px;}/*顶部加载进度条*/.pace {pointer-events: none;user-select: none;z-index: 2;position: fixed;margin: auto;top: 4px;left: 0;right: 0;height: 8px;border-radius: 8px;width: 6rem;background: #eaecf2;overflow: hidden;  }    .pace-inactive .pace-progress {opacity: 0;transition: 0.3s ease-in;  }    .pace.pace-inactive {opacity: 0;transition: 0.3s;top: -8px;  }    .pace .pace-progress {box-sizing: border-box;transform: translate3d(0, 0, 0);position: fixed;z-index: 2;display: block;position: absolute;top: 0;right: 100%;height: 100%;width: 100%;background: #49b1f5;background: linear-gradient(  to right,  rgb(18, 194, 233),  rgb(196, 113, 237),  rgb(246, 79, 89));animation: gradient 2s ease infinite;background-size: 200%;  }#nav-right {flex: 1 1 auto;justify-content: flex-end;margin-left: auto;display: flex;flex-wrap: nowrap;}]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
       <link href="/css/gonggao.css"/>
       <url>/css/gonggao.css</url>
       
@@ -145,10 +156,21 @@
     
     <entry>
       <title></title>
-      <link href="/css/menu.css"/>
-      <url>/css/menu.css</url>
+      <link href="/js/foot.js"/>
+      <url>/js/foot.js</url>
       
-        <content type="html"><![CDATA[#nav .menus_items {    position: absolute;    width: fit-content;    left: 50%;    transform: translateX(-50%);}#nav .menus_items .menus_item:hover .menus_item_child{  display: flex;}/* 这里的5是代表导航栏的第五个元素，即有子菜单的元素，可以按自己需求修改 */.menus_items .menus_item:nth-child(5) .menus_item_child {    left: -65px;}]]></content>
+        <content type="html"><![CDATA[// 动态心跳$(document).ready(function(e){    $('.copyright').html('©2023 <i class="fa-fw fas fa-heartbeat card-announcement-animation cc_pointer" ></i> By Catmint');})$(document).ready(function(e){    show_date_time();})//本站运行时间function show_date_time(){$('.framework-info').html('本站已运行<span id="span_dt_dt" style="color: #fff;"></span>');window.setTimeout("show_date_time()", 1000);BirthDay=new Date("8/4/2023 0:0:0");today=new Date();timeold=(today.getTime()-BirthDay.getTime());sectimeold=timeold/1000secondsold=Math.floor(sectimeold);msPerDay=24*60*60*1000e_daysold=timeold/msPerDaydaysold=Math.floor(e_daysold);e_hrsold=(e_daysold-daysold)*24;hrsold=Math.floor(e_hrsold);e_minsold=(e_hrsold-hrsold)*60;minsold=Math.floor((e_hrsold-hrsold)*60);seconds=Math.floor((e_minsold-minsold)*60);span_dt_dt.innerHTML='<font style=color:#afb4db>'+daysold+'</font> 天 <font style=color:#f391a9>'+hrsold+'</font> 时 <font style=color:#fdb933>'+minsold+'</font> 分 <font style=color:#a3cf62>'+seconds+'</font> 秒';}]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/css/foot.css"/>
+      <url>/css/foot.css</url>
+      
+        <content type="html"><![CDATA[/* 页脚透明 */#footer {    background: transparent !important;}]]></content>
       
     </entry>
     
