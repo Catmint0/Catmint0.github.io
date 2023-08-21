@@ -1,4 +1,33 @@
-/* 页脚透明 */
+/* 页脚透明 
+	#footer {
+    background: transparent !important;
+	}
+*/
+/* 页脚透明渐变 */
 #footer {
     background: transparent !important;
+}
+/* 引入 Font Awesome CSS */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
+
+/* 定义心跳动画 */
+@keyframes heartbeat {
+  0%, 100% {
+    transform: scale(1);
+  }
+  40% {
+    transform: scale(1.15); /* 稍微放大一些，模拟心脏膨胀 */
+  }
+  45% {
+    transform: scale(1); /* 恢复到正常大小 */
+  }
+  50% {
+    transform: scale(0.9); /* 缩小，模拟心脏收缩 */
+  }
+}
+
+/* 应用心跳动画到图标 */
+.heartbeat-icon {
+  animation: heartbeat 0.8s infinite; /* 适当调整动画时间 */
+  color: red
 }

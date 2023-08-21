@@ -1,6 +1,6 @@
 // 动态心跳
 $(document).ready(function(e){
-    $('.copyright').html('©2023 <i class="fa-fw fas fa-heartbeat card-announcement-animation cc_pointer" ></i> By Catmint');
+    $('.copyright').html('<font style=color:#fff>©2023</font> <i class="fa-fw fas fa-heartbeat heartbeat-icon"></i> <font style=color:#fff>By Catmint</font>');
 })
 
 $(document).ready(function(e){
@@ -9,7 +9,7 @@ $(document).ready(function(e){
 
 //本站运行时间
 function show_date_time(){
-$('.framework-info').html('本站已运行<span id="span_dt_dt" style="color: #fff;"></span>');
+$('.framework-info').html('<font style=color:#fff>本站已运行</font><span id="span_dt_dt" style="color: #fff;"></span>');
 window.setTimeout("show_date_time()", 1000);
 BirthDay=new Date("8/4/2023 0:0:0");
 today=new Date();
